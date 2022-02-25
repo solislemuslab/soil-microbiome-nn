@@ -1,0 +1,1 @@
+We host here all scripts, jupyter notebooks or anything related to our learning process to run neural network models in julia.
