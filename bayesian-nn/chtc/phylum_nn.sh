@@ -1,7 +1,4 @@
-# untar the zipped software
-tar -xzf fbm.2022-04-21.tar.gz
-# set the path to the software
-export PATH=./fbm.2022-04-21/bin-fbm:$PATH
+#!/bin/bash
 
 # set up the model:
 # The model has 5 hidden layers, 1 input layer and one output layer
@@ -24,21 +21,19 @@ net-mc "$1".net 1
 # run the whole HMC, using leapfrog length of 10, window size 2, and step size 0.02
 # This gives reasonable rejection rate (< 0.3 for most iterations)
 mc-spec "$1".net repeat 10 sample-sigmas heatbath 0.95 hybrid 10:2 0.02 negate
-# FIXME: change 100 to 100,000 after this script works in chtc
-# run 100,000 iterations
-net-mc "$1".net 100
+# run 50,000 iterations
+net-mc "$1".net 50000
 
 # export chains of all hyperparameter to check convergence
-net-plt t h1h2h3h4h5h6h7h8h9h10h11 "$1".net > chain_"$1".txt
+net-plt t h1h2h3h4h5h6h7h8h9h10h11 "$1".net > phylum_chain_"$1".txt
 # export the hyperparameters associated with each input neuron
-net-display -h "$1".net > struct_"$1".txt
-# FIXME: change 1: to 75000: after this script works in chtc
+net-display -h "$1".net > phylum_struct_"$1".txt
 # use the last 25,000 iterations for prediction
-net-pred tmp "$1".net 1: > result_"$1".txt
+net-pred tmp "$1".net 40000: > phylum_result_"$1".txt
 
 # trim the result file so that the predictions could be readable in R
-sed -i 1,5d result_"$1".txt
-sed -i "$(($(wc -l < result_"$1".txt)-3)),\$d" result_"$1".txt
+sed -i 1,5d phylum_result_"$1".txt
+sed -i "$(($(wc -l < phylum_result_"$1".txt)-3)),\$d" phylum_result_"$1".txt
 
 # remove the network, we could always recreate it with the same script
 rm "$1".net
