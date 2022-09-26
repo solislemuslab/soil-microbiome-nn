@@ -1,0 +1,20 @@
+universe = docker
+docker_image = xtang75/bnn-software:2
+log = ./log/class/bnn_$(Cluster)_$(Process).log
+
+executable = class_scabsuper.sh
+arguments = $(file)
+output = ./output/class/bnn_$(Cluster)_$(Process).out
+error = ./error/class/bnn_$(Cluster)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = scabsuper.txt,class_scabsuper.sh,data/class/
+
+requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
+request_cpus = 1
+request_memory = 100MB
+request_disk = 20GB
+
+queue file from scabsuper.txt

@@ -2,7 +2,7 @@ universe = docker
 docker_image = xtang75/bnn-software:2
 log = ./log/class/bnn_$(Cluster)_$(Process).log
 
-executable = class_nn.sh
+executable = class_scabpit.sh
 arguments = $(file)
 output = ./output/class/bnn_$(Cluster)_$(Process).out
 error = ./error/class/bnn_$(Cluster)_$(Process).err
@@ -10,11 +10,11 @@ error = ./error/class/bnn_$(Cluster)_$(Process).err
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
 
-transfer_input_files = filename.txt,class_nn.sh,data/class/
+transfer_input_files = scabpit.txt,class_scabpit.sh,data/class/
 
 requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
 request_cpus = 1
-request_memory = 500MB
-request_disk = 150GB
+request_memory = 100MB
+request_disk = 20GB
 
-queue file from filename.txt
+queue file from scabpit.txt
