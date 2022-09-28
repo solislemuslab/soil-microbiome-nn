@@ -1,3 +1,7 @@
+# this project
+*.tiff
+pythoncode/Main-Data-Files/*
+
 # Compiled source #
 ###################
 *.com
@@ -107,7 +111,7 @@ Backup[ ]of[ ]*.numbers/
 *.xls*
 *.doc*
 *.ppt*
-
+*.csv*
 
 ### plink
 *.raw
