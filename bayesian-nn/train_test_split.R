@@ -162,7 +162,7 @@ levels <- cbind("Phylum", "Class", "Order", "Family", "Genus")
 
 # One only need to specify the level of the dataset to make everything works
 for (i in 1:length(levels)){
-  for (j in 0:3) {
+  for (j in 1:3) {
     otu_split(levels[i], j)
   }
 }
