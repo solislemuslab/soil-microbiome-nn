@@ -64,6 +64,8 @@ for (i in 1:length(levels)){
   load("alpha_soil", -1, levels[i])
   load("alpha_soil_disease", -1, levels[i])
   load("otu_soil_disease", -1, levels[i])
+  load("otu_soil", -1, levels[i])
+  load("otu_disease", -1, levels[i])
 }
 
 for (i in 1:4){
