@@ -1,0 +1,21 @@
+
+universe = docker
+docker_image = xtang75/bnn-software:2
+log = ../log/all_otu_non_augumented/class/bnn_$(Cluster)_$(Process).log
+
+executable = class.sh
+arguments = $(file)
+output = ../output/all_otu_non_augumented/class/bnn_$(Cluster)_$(Process).out
+error = ../error/all_otu_non_augumented/class/bnn_$(Cluster)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = filename.txt,class.sh,../data/all_otu_non_augumented/class/
+
+requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
+request_cpus = 1
+request_memory = 500MB
+request_disk = 300GB
+
+queue file from filename.txt

@@ -1,0 +1,20 @@
+universe = docker
+docker_image = xtang75/bnn-software:2
+log = ../log/suppression/bnn_$(Cluster)_$(Process).log
+
+executable = sup_nn.sh
+arguments = $(file)
+output = ../output/suppression/bnn_$(Cluster)_$(Process).out
+error = ../error/suppression/bnn_$(Cluster)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = sup.txt,sup_nn.sh,../data/suppression/
+
+requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
+request_cpus = 1
+request_memory = 300MB
+request_disk = 30GB
+
+queue file from sup.txt

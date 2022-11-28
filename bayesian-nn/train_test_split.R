@@ -81,3 +81,8 @@ for (i in 1:length(levels)){
 load("disease_suppression_data", -1, "null")
 load("soil_chemistry_data", -1, "null")
 load("soil_disease", -1, "null")
+
+response <- cbind("no_tuber_scab", "no_tuber_scabpit", "no_tuber_scabsuper", "pctg_black_scurf","yield_per_meter", "yield_per_plant")
+for (i in 1:length(response)){
+  load("all_otu_original", -1, response[i])
+}
