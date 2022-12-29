@@ -1,0 +1,20 @@
+universe = docker
+docker_image = xtang75/bnn-software:2
+log = ../log/otu_0/order/bnn_$(Cluster)_$(Process).log
+
+executable = order_scabpit.sh
+arguments = $(file)
+output = ../output/otu_0/order/bnn_$(Cluster)_$(Process).out
+error = ../error/otu_0/order/bnn_$(Cluster)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = scabpit.txt,order_scabpit.sh,../data/otu_0/order/
+
+requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
+request_cpus = 1
+request_memory = 200MB
+request_disk = 30GB
+
+queue file from scabpit.txt

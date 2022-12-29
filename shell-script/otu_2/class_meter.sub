@@ -1,0 +1,20 @@
+universe = docker
+docker_image = xtang75/bnn-software:2
+log = ../log/otu_2/class/bnn_$(Cluster)_$(Process).log
+
+executable = class_meter.sh
+arguments = $(file)
+output = ../output/otu_2/class/bnn_$(Cluster)_$(Process).out
+error = ../error/otu_2/class/bnn_$(Cluster)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+transfer_input_files = meter.txt,class_meter.sh,../data/otu_2/class/
+
+requirements = (OpSysMajorVer == 8) && (Machine =!= "e2487.chtc.wisc.edu")
+request_cpus = 1
+request_memory = 500MB
+request_disk = 100GB
+
+queue file from meter.txt
