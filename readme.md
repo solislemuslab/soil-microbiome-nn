@@ -1,4 +1,4 @@
-# Neural network model on soil microbiome data
+# Machine learning model on soil microbiome data
 - Rosa Aghdam
 - Xudong Tang
 - Claudia Solís-Lemus
