@@ -9,3 +9,5 @@ For Normalization and feature selection, we used ``NetComi`` R package. The ``ne
 | Part2: Generate 20 normalized OTUs from count augmented OTUs matrices|01:17:39|
 | Part3: Feature selection|34:46:03|
 
+## Run `train-test-split.R`
+This script would be used in-between Julia code. For more detailed information, please check the *Workflow* section in the readme file of `julia-code`.
