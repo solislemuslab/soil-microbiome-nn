@@ -1,4 +1,4 @@
-#  Python codes
+#  Python code
 This .md file provides brief explanations to the Python code in this repository, as well as a short tutorial on reproducing the experiement results.
 The python codes mainly focus on feature selections, comparison to random, Random Forest models, and result visualization.
 ## Setup
