@@ -1,6 +1,6 @@
 #  Python code
 This .md file provides brief explanations to the Python code in this repository, as well as a short tutorial on reproducing the experiement results.
-The python codes mainly focus on feature selections, comparison to random, Random Forest models, and result visualization.
+The python code mainly focus on feature selections, comparison to random, Random Forest models, and result visualization.
 ## Setup
 ### Import the python environment
 import the conda environment named soil_env2.yaml, which used by the project.
@@ -31,8 +31,8 @@ The running time for each algorithm is listed in the following table. The runnin
 |RF based on augmented OTUs for 20 normalized data and 5 levels| 5-RF-Aug.py|12:05:09.61|
 |Compare to random based on four strategies| 6-RF-compareTorandom.py|32:16:41.60|
 
-## Run the codes
-For running these codes, create the following folder as input of algorithms. The name of folders with their description are summarized in the following table.
+## Run the code
+For running these code, create the following folder as input of algorithms. The name of folders with their description are summarized in the following table.
 |Folder name|Sub-folder name|Description|
 |--------------|--------------|--------------|
 |**OTU**|alpha_diversity|alpha_diversity information|
