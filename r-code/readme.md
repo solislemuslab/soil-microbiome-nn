@@ -1,4 +1,4 @@
-# R codes
+# R code
 This .md file provides a brief explanation on the R scripts used in this repository and instruction for reproducing the experiment result. The R code in this study are used mainly on normalization of OTUs and feature selection. A train test split script is written here for producing the exact same split as python scripts as a realiable train-test-split package is not available in Julia at the time when this study is conducted.
 
 ## Run ``NetComi`` code
