@@ -1,4 +1,4 @@
-# Julia codes
+# Julia code
 This .md file gives an overview of the Julia codes used in this study and instruction for setting up the Julia environment to reproduce the results of the study. The Julia codes are mainly used for pre and post process of BNN models as the actual models are ran by shell scripts in Linux terminal. The Julia code also did data-augmentation, which is used in both BNN models and python scripts.
 ## File description
 All the following files should finish running in less than 5 minutes.
