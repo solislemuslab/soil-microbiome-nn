@@ -6,7 +6,12 @@
 - Shan Shan
 - Richard Lankau
 
-This repository provides companion source code to reprooduce models results and visualization plots as presented in *Unlocking the predictive power of soil microbiome data on disease and yield outcomes using deep learning models.*
+This repository provides companion source code to reproduce models results and visualization plots as presented in *Unlocking the predictive power of soil microbiome data on disease and yield outcomes using deep learning models.*
+
+Citation:
+```
+(upcoming)
+```
 
 ## Folder Structure
 The detailed instruction of setting up and running the codes are provided in the README files of each of the following folder.
