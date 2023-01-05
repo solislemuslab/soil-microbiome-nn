@@ -25,7 +25,7 @@ In the same directory of your folder that stores these Julia codes, you need to 
 
 In the `raw-data` folder, store all the raw `.csv` data provided in it.
 
-For the `processed-data` folder, a compressed file system is provided in this repository. The user need to decompress it and put the appropriate files into the corresponding folder. Detailed description of those folders and workflow will be provided in the next section.
+For the `processed-data` folder, a compressed file system is provided in [this link](https://drive.google.com/file/d/1wYtYQLl1D24PlZQHlNYWvLt23ewa3oow/view?usp=sharing). The user need to decompress it and put the appropriate files into the corresponding folder. Detailed description of those folders and workflow will be provided in the next section.
 
 
 ## Workflow
