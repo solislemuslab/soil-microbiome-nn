@@ -1,5 +1,5 @@
 
-# Human limits in Machine Learning: Prediction of plant phenotypes using soil microbiome data}
+# Human limits in Machine Learning: Prediction of plant phenotypes using soil microbiome data
 - Rosa Aghdam*
 - Xudong Tang*
 - Shan Shan
