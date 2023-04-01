@@ -1,12 +1,13 @@
 
-# Machine learning model on soil microbiome data
-- Rosa Aghdam
-- Xudong Tang
-- Claudia Solís-Lemus
+# Human limits in Machine Learning: Prediction of plant phenotypes using soil microbiome data}
+- Rosa Aghdam*
+- Xudong Tang*
 - Shan Shan
 - Richard Lankau
+- Claudia Solís-Lemus
 
-This repository provides companion source code to reproduce models results and visualization plots as presented in *Unlocking the predictive power of soil microbiome data on disease and yield outcomes using deep learning models.*
+
+This repository provides companion source code to reproduce models results and visualization plots as presented in Aghdam et al, 2023.
 
 Citation:
 ```
