@@ -1,4 +1,3 @@
-
 # Human limits in Machine Learning: Prediction of plant phenotypes using soil microbiome data
 - Rosa Aghdam*
 - Xudong Tang*
@@ -7,11 +6,21 @@
 - Claudia Solís-Lemus
 
 
-This repository provides companion source code to reproduce models results and visualization plots as presented in Aghdam et al, 2023.
+This repository provides companion source code to reproduce models results and visualization plots as presented in [Aghdam, Tang et al, 2023](https://arxiv.org/abs/2306.11157).
 
 Citation:
 ```
-(upcoming)
+@ARTICLE{Aghdam2023-nz,
+  title         = "Human Limits in Machine Learning: Prediction of Plant
+                   Phenotypes Using Soil Microbiome Data",
+  author        = "Aghdam, Rosa and Tang, Xudong and Shan, Shan and Lankau,
+                   Richard and Sol{\'\i}s-Lemus, Claudia",
+  month         =  jun,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "stat.ML",
+  eprint        = "2306.11157"
+}
 ```
 
 ## Folder Structure
